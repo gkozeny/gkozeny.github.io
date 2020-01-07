@@ -4,9 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Placeholder</title>
+
+  <title>Grant Kozeny's Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./portfolio.styles.css">
 </head>
-<body>
-  <h1>GK Test - Placeholder</h1>
+<body class="green lighten-3">
+  <div id="app">
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <p>
+            <div style="height:150px;width:150px;margin:auto;">
+              <img src="./profile.png" alt="Profile Picture" class="circle z-depth-4" 
+                style="max-width:100%;max-height:100%;">
+            </div>
+            <span class="card-title">Grant Kozeny's Portfolio</span>
+            <span class="grey-text text-darken-1">Software Developer</span>
+            <br>
+            <a href="https://www.linkedin.com/in/grant-kozeny-91088688/" target="_blank">LinkedIn</a>
+            <br>
+            <a href="https://github.com/gkozeny" target="_blank">GitHub</a>
+          </p>
+          <blockquote style="font-size:125%;">Skills</blockquote>
+          <div class="chip scale-transition scale-out green lighten-3" v-for="skill in skills"
+            :class="{ 'scale-in': skill.render }">
+            {{ skill.skill }}
+          </div>
+          <blockquote style="font-size:125%;">Projects</blockquote>
+          <div v-for="(project, i) in projects">
+            <div style="font-size:125%;">
+              {{ project.name }}
+              <a v-if="project.url !== null" :href="project.url" class="btn-flat btnProjectUrl" target="_blank">
+                <i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="grey-text text-darken-1" v-for="description in project.descriptions"
+              style="padding-top:8px;padding-bottom:8px;">
+              {{ description }}
+            </div>
+            <br>
+            <div class="chip green lighten-3" v-if="getSkillDisplay(skillId) !== null" 
+              v-for="skillId in project.skills">
+              {{ getSkillDisplay(skillId) }}
+            </div>
+            <hr v-if="i !== projects.length - 1">
+          </div>
+          <blockquote style="font-size:125%;">Completed Training Courses</blockquote>
+          <a v-for="course in trainingCourses" :href="course.url" style="display:block;" target="_blank">
+            {{ course.description }}</a>
+        </div>
+      </div>
+    </div>
+    <a id="btnReturnToTop" class="btn-floating btn-large" @click="scrollToTop()">
+      <i class="material-icons">arrow_upward</i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./portfolio.data.js"></script>
+  <script>
+    var vm = new Vue({
+      el: "#app",
+      data: {
+        skills: skills,
+        projects: projects,
+        trainingCourses: trainingCourses 
+      },
+      methods: { 
+        init: function() {
+          var i = 0;
+          var to = setInterval(function() {
+            if (i < vm.skills.length) {
+              vm.skills[i].render = true;
+              i += 1;
+            } else {
+              clearInterval(to);
+            }
+          }, 250);
+        },
+        getSkillDisplay: function(id) {
+          var skill = this.skills.find(a => a.id === id);
+          if (skill !== undefined) {
+            return skill.skill;
+          } 
+          return null;
+        },
+        scrollToTop: function() {
+          window.scrollTo(0, 0);
+        }
+      },
+      created: function() {
+        this.init();
+      }
+    });
+
+    var btnReturnToTop = document.getElementById("btnReturnToTop");
+    window.onscroll = function() {
+      if (window.scrollY > 50) {
+        btnReturnToTop.style.display = "inline";
+      } else {
+        btnReturnToTop.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
