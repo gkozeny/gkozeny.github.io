@@ -73,6 +73,16 @@ var projects = [
     url: null
   },
   {
+    name: "Non-Domicile Fuel Reclass",
+    descriptions: [
+      `Designed and wrote a system to automate a manual monthly process involving updating tax rates and 
+      performing calculations to create journal entries. The old process was being managed in a series of 
+      Excel spreadsheets.`
+    ],
+    skills: [ 2, 10, 25, 26, 28, 30 ],
+    url: null
+  },
+  {
     name: "Shared Services System",
     descriptions: [
       `Wrote several console apps that run on a scheduled (monthly) basis, and an associated WCF service to manage  
