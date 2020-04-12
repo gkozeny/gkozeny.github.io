@@ -28,14 +28,25 @@ var skills = [
   { id: 27, skill: ".NET Console App", render: false },
   { id: 28, skill: "LINQ", render: false },
   { id: 29, skill: "JIRA", render: false },
-  { id: 30, skill: "Infragistics/UltraGrid", render: false }
+  { id: 30, skill: "Infragistics/UltraGrid", render: false },
+  { id: 31, skill: "SQL Server", render: false },
+  { id: 32, skill: "D3.js", render: false }
 ];
 
 var projects = [
   {
+    name: "Bulk Color Assignment",
+    descriptions: [
+      `Designed and implemented an app to add colors to styles, in bulk. This was a rewrite of a legacy app with changes to add 
+      colors in bulk, instead of individually, and other workflow improvements.`
+    ],
+    skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ],
+    url: null
+  },
+  {
     name: "Legal Matter Point",
     descriptions: [
-      `Designed and wrote a law firm matter management system. Some key features: suite of reports, 
+      `Designed and implemented a law firm matter management system. Some key features: suite of reports, 
       merge docs, fully customizable questionnaire forms, export/import capabilities, client credit card payments, 
       mail merge (via the Outlook Add-In), and role based/2-factor authentication and authorization system.`,
       `The app is hosted on Microsoft Azure, I configured Azure resources: App Service, Storage Account, SendGrid, 
@@ -47,7 +58,7 @@ var projects = [
   {
     name: "Ez Split",
     descriptions: [ 
-      `Designed and wrote an Android app to track gym workouts. It uses the local SqLite DB instance available
+      `Designed and implemented an Android app to track gym workouts. It uses the local SqLite DB instance available
       to apps on Android devices to manage data.`
     ],
     skills: [ 4, 19 ],
@@ -56,7 +67,7 @@ var projects = [
   {
     name: "Tax Accrual System",
     descriptions: [
-      `Designed and wrote a system to manage real estate taxes. It includes a user interface and a 
+      `Designed and implemented a system to manage real estate taxes. It includes a user interface and a 
       console app to process user-entered data, generate and email reports, and create journal entries.`
     ],
     skills: [ 1, 10, 25, 26, 27, 28, 30 ],
@@ -65,7 +76,7 @@ var projects = [
   {
     name: "Intercompany Journal Entries",
     descriptions: [
-      `Designed and wrote a system to create source/destination company journal entries. These entries can be
+      `Designed and implemented a system to create source/destination company journal entries. These entries can be
       grouped into buckets. User-level security is tied to each bucket. Supports export/import functionality for
       batches of entries. In addition, supporting documents (pdf, docx, txt, xlsx) can be attached to entries.`
     ],
@@ -75,7 +86,7 @@ var projects = [
   {
     name: "Non-Domicile Fuel Reclass",
     descriptions: [
-      `Designed and wrote a system to automate a manual monthly process involving updating tax rates and 
+      `Designed and implemented a system to automate a manual monthly process involving updating tax rates and 
       performing calculations to create journal entries. The old process was being managed in a series of 
       Excel spreadsheets.`
     ],
