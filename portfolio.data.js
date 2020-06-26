@@ -30,10 +30,20 @@ var skills = [
   { id: 29, skill: "JIRA", render: false },
   { id: 30, skill: "Infragistics/UltraGrid", render: false },
   { id: 31, skill: "SQL Server", render: false },
-  { id: 32, skill: "D3.js", render: false }
+  { id: 32, skill: "D3.js", render: false },
+  { id: 33, skill: "SSRS", render: false },
+  { id: 34, skill: "SQLite", render: false }
 ];
 
 var projects = [
+  {
+    name: "LBI to SSRS",
+    descriptions: [
+      `Converted a variety of legacy Crystal Reports to SSRS in csv, xlsx, and pdf formats.`
+    ],
+    skills: [ 13, 31, 33 ],
+    url: null
+  },
   {
     name: "Bulk Color Assignment",
     descriptions: [
@@ -41,6 +51,15 @@ var projects = [
       colors in bulk, instead of individually, and other workflow improvements.`
     ],
     skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ],
+    url: null
+  },
+  {
+    name: "Questionnaire Generator",
+    descriptions: [
+      `Created an application with login authentication (.NET CORE Web API / Identity) and Angular reactive forms to build out 
+      custom questionnaire forms.`
+    ],
+    skills: [ 1, 7, 8, 28, 34 ],
     url: null
   },
   {
@@ -146,6 +165,18 @@ var projects = [
 ];
 
 var trainingCourses = [
+  { 
+    url: "https://app.pluralsight.com/library/courses/dotnet-core-testing-code-xunit-dotnet-getting-started/table-of-contents", 
+    description: "Testing .NET Code with xUnit.net: Getting Started" 
+  },
+  { 
+    url: "https://app.pluralsight.com/library/courses/refactoring-csharp-developers/table-of-contents", 
+    description: "Refactoring for C# Developers" 
+  },
+  { 
+    url: "https://app.pluralsight.com/library/courses/csharp-applying-functional-principles/table-of-contents", 
+    description: "Applying Functional Principles in C#" 
+  },
   { 
     url: "https://www.pluralsight.com/courses/openid-and-oauth2-securing-angular-apps", 
     description: "Securing Angular Apps with OpenID Connect and OAuth 2" 
