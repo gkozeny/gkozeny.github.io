@@ -166,6 +166,10 @@ var projects = [
 
 var trainingCourses = [
   { 
+    url: "https://app.pluralsight.com/library/courses/csharp-test-driven-development/table-of-contents", 
+    description: "Test Driven Development in C#" 
+  },
+  { 
     url: "https://app.pluralsight.com/library/courses/dotnet-core-testing-code-xunit-dotnet-getting-started/table-of-contents", 
     description: "Testing .NET Code with xUnit.net: Getting Started" 
   },
