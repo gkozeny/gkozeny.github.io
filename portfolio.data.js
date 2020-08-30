@@ -166,6 +166,10 @@ var projects = [
 
 var trainingCourses = [
   { 
+    url: "https://www.udemy.com/course/nuxtjs-vuejs-on-steroids/", 
+    description: "Nuxt.js - Vue.js on Steroids" 
+  },
+  { 
     url: "https://app.pluralsight.com/library/courses/mocking-moq-xunit/table-of-contents", 
     description: "Mocking with Moq and xUnit" 
   },
