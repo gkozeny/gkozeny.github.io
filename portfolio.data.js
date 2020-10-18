@@ -26,20 +26,41 @@ var skills = [
   { id: 25, skill: "Winforms", render: false },
   { id: 26, skill: "WCF", render: false },
   { id: 27, skill: ".NET Console App", render: false },
-  { id: 28, skill: "LINQ", render: false },
+  { id: 28, skill: ".NET LINQ", render: false },
   { id: 29, skill: "JIRA", render: false },
   { id: 30, skill: "Infragistics/UltraGrid", render: false },
   { id: 31, skill: "SQL Server", render: false },
   { id: 32, skill: "D3.js", render: false },
   { id: 33, skill: "SSRS", render: false },
-  { id: 34, skill: "SQLite", render: false }
+  { id: 34, skill: "SQLite", render: false },
+  { id: 35, skill: "Nuxt.js", render: false },
+  { id: 36, skill: "Firebase - Firestore", render: false },
+  { id: 37, skill: "Firebase - Storage", render: false },
+  { id: 38, skill: "Firebase - Auth", render: false },
+  { id: 39, skill: "Bulma.css", render: false }
 ];
 
 var projects = [
   {
+    name: "Thullo",
+    descriptions: [
+      `A base implementation Trello clone based on linked challenge from devchallenges.io.`
+    ],
+    skills: [ 14, 23, 35, 36, 37, 38, 39 ],
+    url: 'https://devchallenges.io/challenges/wP0LbGgEeKhpFHUpPpDh'
+  },
+  {
+    name: "Bulk Size Assignment",
+    descriptions: [
+      `Implemented an app to add sizes to styles, in bulk.`
+    ],
+    skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ],
+    url: null
+  },
+  {
     name: "LBI to SSRS",
     descriptions: [
-      `Converted a variety of legacy Crystal Reports to SSRS in csv, xlsx, and pdf formats.`
+      `Converted a variety of legacy reports to SSRS in csv, xlsx, and pdf formats. Set up email subscriptions.`
     ],
     skills: [ 13, 31, 33 ],
     url: null
@@ -47,8 +68,7 @@ var projects = [
   {
     name: "Bulk Color Assignment",
     descriptions: [
-      `Designed and implemented an app to add colors to styles, in bulk. This was a rewrite of a legacy app with changes to add 
-      colors in bulk, instead of individually, and other workflow improvements.`
+      `Designed and implemented an app to add colors to styles, in bulk.`
     ],
     skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ],
     url: null
