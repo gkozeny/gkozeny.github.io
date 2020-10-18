@@ -2,7 +2,6 @@ var skills = [
   { id: 1, skill: "C#", render: false }, 
   { id: 2, skill: "VB.NET", render: false }, 
   { id: 3, skill: "PHP", render: false },
-  { id: 4, skill: "Java", render: false },
   { id: 5, skill: "COBOL", render: false },
   { id: 6, skill: "ASP.NET Core", render: false }, 
   { id: 7, skill: ".NET Core WebAPI", render: false }, 
@@ -17,7 +16,6 @@ var skills = [
   { id: 16, skill: "MS Excel Add-In", render: false },
   { id: 17, skill: "SVN SCM", render: false },
   { id: 18, skill: "Git SCM", render: false },
-  { id: 19, skill: "Android Studio", render: false },
   { id: 20, skill: "EF Core", render: false },
   { id: 21, skill: "HTML", render: false },
   { id: 22, skill: "CSS", render: false },
@@ -93,15 +91,6 @@ var projects = [
     ],
     skills: [ 1, 6, 7, 9, 11, 12, 13, 14, 15, 18, 20, 21, 22, 24, 28 ],
     url: null
-  },
-  {
-    name: "Ez Split",
-    descriptions: [ 
-      `Designed and implemented an Android app to track gym workouts. It uses the local SqLite DB instance available
-      to apps on Android devices to manage data.`
-    ],
-    skills: [ 4, 19 ],
-    url: `https://play.google.com/store/apps/details?id=com.gmail.gkozapps.ezsplit&hl=en_US`
   },
   {
     name: "Tax Accrual System",
