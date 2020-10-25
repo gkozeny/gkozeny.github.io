@@ -45,7 +45,7 @@ var projects = [
       `A base implementation Trello clone based on linked challenge from devchallenges.io.`
     ],
     skills: [ 14, 23, 35, 36, 37, 38, 39 ],
-    url: 'https://devchallenges.io/challenges/wP0LbGgEeKhpFHUpPpDh'
+    url: 'https://thullo-9ff89.firebaseapp.com/'
   },
   {
     name: "Bulk Size Assignment",
