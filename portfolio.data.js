@@ -89,7 +89,7 @@ var projects = [
       `The app is hosted on Microsoft Azure, I configured Azure resources: App Service, Storage Account, SendGrid, 
       and MySQL Database.`
     ],
-    skills: [ 1, 6, 7, 9, 11, 12, 13, 14, 15, 18, 20, 21, 22, 24, 28 ],
+    skills: [ 1, 6, 7, 9, 11, 12, 13, 14, 15, 18, 20, 21, 22, 23, 24, 28 ],
     url: null
   },
   {
