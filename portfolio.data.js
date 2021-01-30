@@ -175,6 +175,10 @@ var projects = [
 
 var trainingCourses = [
   { 
+    url: "https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners/", 
+    description: "Data Warehouse Fundamentals for Beginners" 
+  },
+  { 
     url: "https://www.udemy.com/course/nuxtjs-vuejs-on-steroids/", 
     description: "Nuxt.js - Vue.js on Steroids" 
   },
