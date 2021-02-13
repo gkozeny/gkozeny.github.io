@@ -40,6 +40,14 @@ var skills = [
 
 var projects = [
   {
+    name: "Bulk Proto Notes",
+    descriptions: [
+      `Implemented an app to edit style proto notes in bulk.`
+    ],
+    skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ],
+    url: null
+  },
+  {
     name: "Thullo",
     descriptions: [
       `A base implementation Trello clone based on linked challenge from devchallenges.io.`
