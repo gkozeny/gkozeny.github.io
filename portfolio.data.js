@@ -197,7 +197,7 @@ var trainingCourses = [
   },
   { 
     url: "https://www.youtube.com/watch?v=w7ejDZ8SWv8&t=241s", 
-    description: "React JS Crash Course 2021" 
+    description: "React.js Crash Course 2021" 
   },
   { 
     url: "https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners/", 
