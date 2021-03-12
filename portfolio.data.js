@@ -35,7 +35,8 @@ var skills = [
   { id: 36, skill: "Firebase - Firestore", render: false },
   { id: 37, skill: "Firebase - Storage", render: false },
   { id: 38, skill: "Firebase - Auth", render: false },
-  { id: 39, skill: "Bulma.css", render: false }
+  { id: 39, skill: "Bulma.css", render: false },
+  { id: 40, skill: "Handlebars.js", render: false }
 ];
 
 var projects = [
@@ -45,6 +46,14 @@ var projects = [
       `Implemented an app to edit style proto notes in bulk.`
     ],
     skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ],
+    url: null
+  },
+  {
+    name: "House BOM",
+    descriptions: [
+      `Migrated House BOM functionality from legacy ASP.NET web page to consolidate with the new BOM application.`
+    ],
+    skills: [ 9, 13, 14, 21, 22, 29, 40 ],
     url: null
   },
   {
@@ -182,6 +191,14 @@ var projects = [
 ];
 
 var trainingCourses = [
+  { 
+    url: "https://www.youtube.com/watch?v=mTz0GXj8NN0&t=6s", 
+    description: "Next.js Crash Course 2021" 
+  },
+  { 
+    url: "https://www.youtube.com/watch?v=w7ejDZ8SWv8&t=241s", 
+    description: "React JS Crash Course 2021" 
+  },
   { 
     url: "https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners/", 
     description: "Data Warehouse Fundamentals for Beginners" 
