@@ -36,10 +36,21 @@ var skills = [
   { id: 37, skill: "Firebase - Storage", render: false },
   { id: 38, skill: "Firebase - Auth", render: false },
   { id: 39, skill: "Bulma.css", render: false },
-  { id: 40, skill: "Handlebars.js", render: false }
+  { id: 40, skill: "Handlebars.js", render: false },
+	{ id: 41, skill: "React.js", render: false },
+	{ id: 42, skill: "Next.js", render: false},
+	{ id: 43, skill: "Bootstrap", render: false }
 ];
 
 var projects = [
+	{
+    name: "Coffee Shop",
+    descriptions: [
+      `Browse coffee products, pick quantity, add to cart, checkout. Created using React / Next.js and Bootstrap 5.`
+    ],
+    skills: [ 14, 41, 42, 43 ],
+    url: null
+  },
   {
     name: "Bulk Proto Notes",
     descriptions: [
