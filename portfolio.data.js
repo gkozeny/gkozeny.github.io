@@ -39,10 +39,28 @@ var skills = [
   { id: 40, skill: "Handlebars.js", render: false },
 	{ id: 41, skill: "React.js", render: false },
 	{ id: 42, skill: "Next.js", render: false},
-	{ id: 43, skill: "Bootstrap", render: false }
+	{ id: 43, skill: "Bootstrap", render: false },
+	{ id: 44, skill: "GraphQL", render: false }
 ];
 
 var projects = [
+	{
+    name: "Style Attributes",
+    descriptions: [
+      `Modified existing app / backend API with new pattern to support quickly creating and managing new attribute tags 
+			for styles. Implemented these attributes (API + front end) using the new pattern.`
+    ],
+    skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 44 ],
+    url: null
+  },
+	{
+    name: "Artwork Management",
+    descriptions: [
+      `Implemented an app to manage artwork files uploaded by customers for order Personalization.`
+    ],
+    skills: [ 1, 7, 13, 14, 21, 22, 28, 29, 31, 32, 43 ],
+    url: null
+  },
 	{
     name: "Coffee Shop",
     descriptions: [
