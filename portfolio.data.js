@@ -40,7 +40,8 @@ var skills = [
 	{ id: 41, skill: "React.js", render: false },
 	{ id: 42, skill: "Next.js", render: false},
 	{ id: 43, skill: "Bootstrap", render: false },
-	{ id: 44, skill: "GraphQL", render: false }
+	{ id: 44, skill: "GraphQL", render: false },
+	{ id: 45, skill: "Unity 2D", render: false }
 ];
 
 var projects = [
@@ -220,6 +221,10 @@ var projects = [
 ];
 
 var trainingCourses = [
+	{ 
+    url: "https://www.udemy.com/share/101WYy2@Pm5jV0tjc1AOc0BGC3V/fj5uSldh/", 
+    description: "Complete C# Unity Game Developer 2D" 
+  },
   { 
     url: "https://www.youtube.com/watch?v=mTz0GXj8NN0&t=6s", 
     description: "Next.js Crash Course 2021" 
