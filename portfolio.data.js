@@ -46,6 +46,14 @@ var skills = [
 
 var projects = [
 	{
+    name: "Raw Material Bulk Editor",
+    descriptions: [
+      `Designed and implemented an app to bulk edit raw material attributes.`
+    ],
+    skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32 ],
+    url: null
+  },
+	{
     name: "Style Attributes",
     descriptions: [
       `Modified existing app / backend API with new pattern to support quickly creating and managing new attribute tags 
@@ -57,7 +65,8 @@ var projects = [
 	{
     name: "Artwork Management",
     descriptions: [
-      `Implemented an app to manage artwork files uploaded by customers for order Personalization.`
+      `Designed and implemented an app to manage personalized orders. Included integration with
+			 eCommerce site, and order confirmation email enhancements.`
     ],
     skills: [ 1, 7, 13, 14, 21, 22, 28, 29, 31, 32, 43 ],
     url: null
