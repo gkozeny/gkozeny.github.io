@@ -231,6 +231,10 @@ var projects = [
 
 var trainingCourses = [
 	{ 
+    url: "https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/", 
+    description: "JavaScript Algorithms and Data Structures Masterclass" 
+  },
+	{ 
     url: "https://www.udemy.com/share/101WYy2@Pm5jV0tjc1AOc0BGC3V/fj5uSldh/", 
     description: "Complete C# Unity Game Developer 2D" 
   },
