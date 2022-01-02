@@ -230,6 +230,10 @@ var projects = [
 ];
 
 var trainingCourses = [
+	{
+		url: "https://www.youtube.com/watch?v=DgVjEo3OGBI", 
+    description: ".NET Microservices – Full Course"
+	},
 	{ 
     url: "https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/", 
     description: "JavaScript Algorithms and Data Structures Masterclass" 
