@@ -7,106 +7,113 @@
 
   <title>Grant Kozeny's Portfolio</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./portfolio.styles.css">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous"
+  >
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"
+  ></script>
 </head>
-<body class="green lighten-3">
-  <div id="app">
-    <div class="container">
-      <div class="card">
-        <div class="card-content">
-          <p>
-            <div style="height:150px;width:150px;margin:auto;">
-              <img src="./profile.png" alt="Profile Picture" class="circle z-depth-4" 
-                style="max-width:100%;max-height:100%;">
-            </div>
-            <span class="card-title">Grant Kozeny's Portfolio</span>
-            <span class="grey-text text-darken-1">Software Developer</span>
-            <br>
-            <a href="https://www.linkedin.com/in/grant-kozeny-91088688/" target="_blank">LinkedIn</a>
-            <br>
-            <a href="https://github.com/gkozeny" target="_blank">GitHub</a>
-          </p>
-          <blockquote style="font-size:125%;">Skills</blockquote>
-          <div class="chip scale-transition scale-out green lighten-3" v-for="skill in skills"
-            :class="{ 'scale-in': skill.render }">
-            {{ skill.skill }}
-          </div>
-          <blockquote style="font-size:125%;">Projects</blockquote>
-          <div v-for="(project, i) in projects">
-            <div style="font-size:125%;">
-              {{ project.name }}
-              <a v-if="project.url !== null" :href="project.url" class="btn-flat btnProjectUrl" target="_blank">
-                <i class="material-icons">open_in_new</i></a>
-            </div>
-            <div class="grey-text text-darken-1" v-for="description in project.descriptions"
-              style="padding-top:8px;padding-bottom:8px;">
-              {{ description }}
-            </div>
-            <br>
-            <div class="chip green lighten-3" v-if="getSkillDisplay(skillId) !== null" 
-              v-for="skillId in project.skills">
-              {{ getSkillDisplay(skillId) }}
-            </div>
-            <hr v-if="i !== projects.length - 1">
-          </div>
-          <blockquote style="font-size:125%;">Completed Training Courses</blockquote>
-          <a v-for="course in trainingCourses" :href="course.url" style="display:block;" target="_blank">
-            {{ course.description }}</a>
+<body>
+  <div style="background-color: #A5D6A7; min-height: 100vh;">
+    <div id="app">
+      <div class="container shadow bg-light">
+        <div>
+          <img src="profile.png" class="img-thumbnail mx-auto d-block" width="120px" height="120px" alt="Grant Kozeny" />
         </div>
+          
+          <div>
+            <p class="h4 text-muted">Grant Kozeny's Portfolio</p>
+            <p class="h6 text-muted">Software Developer</p>
+            <a href="https://www.linkedin.com/in/grant-kozeny-91088688/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/gkozeny" target="_blank">GitHub</a>
+          </div>
+  
+          <div class="mt-2">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Skills & Tools
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span class="badge bg-primary me-2" v-for="(skill, id) in skills">{{ skill }}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Projects
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div v-for="(project, i) in projects">
+                      <div style="font-size:125%;">
+                        {{ project.name }}
+                      </div>
+                      <div v-for="description in project.descriptions" class="py-2 text-muted">
+                        {{ description }}
+                      </div>
+                      <span class="badge bg-primary me-2" v-for="skillId in project.skills">
+                        {{ skills[skillId] }}
+                      </span>
+                      <hr v-if="i !== projects.length - 1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Completed Training Courses
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <a 
+                      v-for="course in trainingCourses" 
+                      :href="course.url" 
+                      style="display:block;" 
+                      target="_blank"
+                    >
+                      {{ course.description }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my-1">&nbsp;</div>
       </div>
-    </div>
-    <a id="btnReturnToTop" class="btn-floating btn-large" @click="scrollToTop()">
-      <i class="material-icons">arrow_upward</i></a>
-  </div> 
+      <button 
+        id="btnReturnToTop" 
+        class="btn btn-primary d-block mx-auto" 
+        :class="{ invisible: !showReturnToTop }"
+        onclick="window.scrollTo(0, 0)" 
+        style="display: none">
+        Scroll to Top
+      </button>
+    </div> 
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="./portfolio.data.js"></script>
   <script>
-    var vm = new Vue({
-      el: "#app",
-      data: {
-        skills: skills,
-        projects: projects,
-        trainingCourses: trainingCourses 
-      },
-      methods: { 
-        init: function() {
-          var i = 0;
-          var to = setInterval(function() {
-            if (i < vm.skills.length) {
-              vm.skills[i].render = true;
-              i += 1;
-            } else {
-              clearInterval(to);
-            }
-          }, 150);
-        },
-        getSkillDisplay: function(id) {
-          var skill = this.skills.find(a => a.id === id);
-          if (skill !== undefined) {
-            return skill.skill;
-          } 
-          return null;
-        },
-        scrollToTop: function() {
-          window.scrollTo(0, 0);
-        }
-      },
-      created: function() {
-        this.init();
-      }
+    let vm = new Vue({ 
+      el: '#app', 
+      data: { skills, projects, trainingCourses, showReturnToTop: false } 
     });
 
-    var btnReturnToTop = document.getElementById("btnReturnToTop");
-    window.onscroll = function() {
-      if (window.scrollY > 50) {
-        btnReturnToTop.style.display = "inline";
-      } else {
-        btnReturnToTop.style.display = "none";
-      }
-    }
+    window.onscroll = () => vm.$data.showReturnToTop = window.scrollY > 50;
   </script>
 </body>
 </html>
