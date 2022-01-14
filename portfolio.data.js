@@ -210,6 +210,10 @@ var projects = [
 ];
 
 var trainingCourses = [
+  {
+		url: 'https://www.youtube.com/watch?v=v52yC9kq0Yg', 
+    description: 'Intro to Azure Service Bus'
+	},
 	{
 		url: 'https://www.youtube.com/watch?v=DgVjEo3OGBI', 
     description: '.NET Microservices – Full Course'
