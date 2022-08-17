@@ -211,6 +211,14 @@ var projects = [
 
 var trainingCourses = [
   {
+		url: 'https://www.youtube.com/watch?v=jD7FnbI76Hg', 
+    description: 'Realtime Chat With Users & Rooms - Socket.io, Node & Express'
+	},
+  {
+		url: 'https://www.youtube.com/watch?v=9Byvwa9yF-I', 
+    description: 'Intro to Records in C# 9'
+	},
+  {
 		url: 'https://www.youtube.com/watch?v=v52yC9kq0Yg', 
     description: 'Intro to Azure Service Bus'
 	},
@@ -223,7 +231,7 @@ var trainingCourses = [
     description: 'JavaScript Algorithms and Data Structures Masterclass' 
   },
 	{ 
-    url: 'https://www.udemy.com/share/101WYy2@Pm5jV0tjc1AOc0BGC3V/fj5uSldh/', 
+    url: 'https://www.udemy.com/course/unitycourse/', 
     description: 'Complete C# Unity Game Developer 2D' 
   },
   { 
@@ -243,23 +251,23 @@ var trainingCourses = [
     description: 'Nuxt.js - Vue.js on Steroids' 
   },
   { 
-    url: 'https://app.pluralsight.com/library/courses/mocking-moq-xunit/table-of-contents', 
+    url: 'https://www.pluralsight.com/courses/mocking-moq-xunit', 
     description: 'Mocking with Moq and xUnit' 
   },
   { 
-    url: 'https://app.pluralsight.com/library/courses/csharp-test-driven-development/table-of-contents', 
+    url: 'https://www.pluralsight.com/courses/csharp-test-driven-development', 
     description: 'Test Driven Development in C#' 
   },
   { 
-    url: 'https://app.pluralsight.com/library/courses/dotnet-core-testing-code-xunit-dotnet-getting-started/table-of-contents', 
+    url: 'https://www.pluralsight.com/courses/dotnet-core-testing-code-xunit-dotnet-getting-started', 
     description: 'Testing .NET Code with xUnit.net: Getting Started' 
   },
   { 
-    url: 'https://app.pluralsight.com/library/courses/refactoring-csharp-developers/table-of-contents', 
+    url: 'https://www.pluralsight.com/courses/refactoring-csharp-developers', 
     description: 'Refactoring for C# Developers' 
   },
   { 
-    url: 'https://app.pluralsight.com/library/courses/csharp-applying-functional-principles/table-of-contents', 
+    url: 'https://www.pluralsight.com/courses/csharp-applying-functional-principles', 
     description: 'Applying Functional Principles in C#' 
   },
   { 
@@ -335,27 +343,27 @@ var trainingCourses = [
     description: 'Vue.js: Big Picture' 
   },
   { 
-    url: 'https://www.udemy.com/share/101WMMBEMbd1pbQnQ=/', 
+    url: 'https://www.udemy.com/course/build-an-app-with-aspnet-core-and-angular-from-scratch/', 
     description: 'Build an app with ASPNET Core and Angular from scratch' 
   },
   { 
-    url: 'https://www.udemy.com/share/101WASBEMbd1pbQnQ=/', 
+    url: 'https://www.udemy.com/course/vuejs-2-the-complete-guide/', 
     description: 'Vue JS 2 - The Complete Guide' 
   },
   { 
-    url: 'https://www.udemy.com/share/101MQ5BEMbd1pbQnQ=/', 
+    url: 'https://www.udemy.com/course/php-for-beginners-/', 
     description: 'PHP for Beginners' 
   },
   { 
-    url: 'https://www.udemy.com/share/102hbmBEMbd1pbQnQ=/', 
+    url: 'https://www.udemy.com/course/php-mvc-from-scratch/', 
     description: 'Write PHP Like a Pro: Build a PHP MVC Framework From Scratch' 
   },
   { 
-    url: 'https://www.udemy.com/share/102sx2BEMbd1pbQnQ=/', 
+    url: 'https://www.udemy.com/course/php-security/', 
     description: 'PHP Security' 
   },
   { 
-    url: 'https://www.udemy.com/share/102sx6BEMbd1pbQnQ=/', 
+    url: 'https://www.udemy.com/course/php-email/', 
     description: 'Sending email with PHP: from Basic to Advanced' 
   },
   { 
@@ -363,7 +371,7 @@ var trainingCourses = [
     description: 'Login and Registration from Scratch with PHP and MySQL' 
   },
   { 
-    url: 'https://www.udemy.com/share/102sx0BEMbd1pbQnQ=/', 
+    url: 'https://www.udemy.com/course/localhost-web-server/', 
     description: 'Set up a localhost Web Server for Faster Website Development' 
   }
 ]
