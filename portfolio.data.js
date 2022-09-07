@@ -45,6 +45,41 @@ var skills = {
 };
 
 var projects = [
+  {
+    name: 'Internal Returns Authorization',
+    descriptions: [`Implemented a new page so that the business can process customer returns more efficiently.`],
+    skills: [ 1, 7, 13, 14, 21, 22, 28, 29, 31, 32, 43 ]
+  },
+  {
+    name: 'eCommerce: Online Invoices',
+    descriptions: [`Implemented a page for customers to view their invoices, and download them as PDFs. 
+      CSS applied so invoices adapt to mobile screens.`],
+    skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32, 43 ]
+  },
+  {
+    name: 'Personalization: Handle When ERP Down',
+    descriptions: [`Implemented a configuration option to turn the customization feature off when the ERP is down.`],
+    skills: [2, 31]
+  },
+  {
+    name: 'Personalization: eCommerce PDP',
+    descriptions: [`Implemented a 3D builder feature using web technologies - customers can customize garments.`],
+    skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32, 43 ]
+  },
+  {
+    name: 'Personalization: 3D Preview App',
+    descriptions: [`Implemented a page for internal users to preview 3D files they are working on, before uploading 
+      them to the eCommerce site (via this page).`],
+    skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32, 43 ]
+  },
+  {
+    name: 'Personalization: Artwork Management',
+    descriptions: [
+      `Designed and implemented an app to manage personalized orders. Included integration with
+			 eCommerce site, and order confirmation email enhancements.`
+    ],
+    skills: [ 1, 7, 13, 14, 21, 22, 28, 29, 31, 32, 43 ]
+  },
 	{
     name: 'Raw Material Bulk Editor',
     descriptions: [
@@ -59,14 +94,6 @@ var projects = [
 			for styles. Implemented these attributes (API + front end) using the new pattern.`
     ],
     skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 44 ]
-  },
-	{
-    name: 'Artwork Management',
-    descriptions: [
-      `Designed and implemented an app to manage personalized orders. Included integration with
-			 eCommerce site, and order confirmation email enhancements.`
-    ],
-    skills: [ 1, 7, 13, 14, 21, 22, 28, 29, 31, 32, 43 ]
   },
 	{
     name: 'Coffee Shop',
