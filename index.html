@@ -56,19 +56,20 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <div v-for="(project, i) in projects">
-                      <div style="font-size:125%;">
-                        {{ project.name }}
+                    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                        <div v-for="(project, i) in projects" class="card m-1" style="flex: 400px;">
+                          <div class="card-body">
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <p class="card-text">
+                              <div v-for="description in project.descriptions" class="py-2 text-muted">{{ description }}</div>
+                            </p>
+                            <span class="badge bg-primary me-2" v-for="skillId in project.skills">
+                              {{ skills[skillId] }}
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                      <div v-for="description in project.descriptions" class="py-2 text-muted">
-                        {{ description }}
-                      </div>
-                      <span class="badge bg-primary me-2" v-for="skillId in project.skills">
-                        {{ skills[skillId] }}
-                      </span>
-                      <hr v-if="i !== projects.length - 1" />
-                    </div>
-                  </div>
+                </div>
                 </div>
               </div>
               <div class="accordion-item">
