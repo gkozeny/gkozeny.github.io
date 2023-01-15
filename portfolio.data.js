@@ -46,186 +46,172 @@ var skills = {
 
 var projects = [
   {
-    name: 'Internal Returns Authorization',
-    descriptions: [`Implemented a new page so that the business can process customer returns more efficiently.`],
+    name: 'AR Applied Credit Batches',
+    descriptions: [`Implemented a batch automation for applied credits.`],
+    skills: [ 1, 7, 31 ]
+  },
+  {
+    name: 'Internal Return Authorizations',
+    descriptions: [`Implemented a new page for customer return authorizations.`],
     skills: [ 1, 7, 13, 14, 21, 22, 28, 29, 31, 32, 43 ]
   },
   {
     name: 'eCommerce: Online Invoices',
-    descriptions: [`Implemented a page for customers to view their invoices, and download them as PDFs. 
-      CSS applied so invoices adapt to mobile screens.`],
+    descriptions: [`Implemented a page for customers to view printer-friendly invoices.`],
     skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32, 43 ]
   },
   {
-    name: 'Personalization: Handle When ERP Down',
-    descriptions: [`Implemented a configuration option to turn the customization feature off when the ERP is down.`],
+    name: 'Customization: Handle When ERP Down',
+    descriptions: [`Implemented configuration to toggle the customization feature when the ERP is offline.`],
     skills: [2, 31]
   },
   {
-    name: 'Personalization: eCommerce PDP',
-    descriptions: [`Implemented a 3D builder feature using web technologies - customers can customize garments.`],
+    name: 'Customize: Product Detail Page',
+    descriptions: [`Implemented a 3D customization tool on the web. Connected to internal systems for order fulfillment.`],
     skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32, 43 ]
   },
   {
-    name: 'Personalization: 3D Preview App',
-    descriptions: [`Implemented a page for internal users to preview 3D files they are working on, before uploading 
-      them to the eCommerce site (via this page).`],
+    name: 'Customize: 3D Preview App',
+    descriptions: [`Implemented a page to preview 3D files before uploading them to the web.`],
     skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32, 43 ]
   },
   {
-    name: 'Personalization: Artwork Management',
+    name: 'Customize: Artwork Management',
     descriptions: [
-      `Designed and implemented an app to manage personalized orders. Included integration with
-			 eCommerce site, and order confirmation email enhancements.`
+      `implemented an app to process and fulfill customize orders.`
     ],
     skills: [ 1, 7, 13, 14, 21, 22, 28, 29, 31, 32, 43 ]
   },
 	{
     name: 'Raw Material Bulk Editor',
     descriptions: [
-      `Designed and implemented an app to bulk edit raw material attributes.`
+      `implemented an app to bulk edit raw material attributes.`
     ],
     skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 32 ]
   },
 	{
     name: 'Style Attributes',
     descriptions: [
-      `Modified existing app / backend API with new pattern to support quickly creating and managing new attribute tags 
-			for styles. Implemented these attributes (API + front end) using the new pattern.`
+      `Implemented additional attributes to support quickly creating and managing new styles.`
     ],
     skills: [ 1, 7, 13, 14, 21, 22, 29, 31, 44 ]
   },
 	{
-    name: 'Coffee Shop',
+    name: '[Demo] Coffee Shop',
     descriptions: [
-      `Browse coffee products, pick quantity, add to cart, checkout. Created using React / Next.js and Bootstrap 5.`
+      `Browse coffee products, pick quantity, add to cart, checkout.`
     ],
     skills: [ 14, 41, 42, 43 ]
   },
   {
     name: 'Bulk Proto Notes',
     descriptions: [
-      `Implemented an app to edit style proto notes in bulk.`
+      `Implemented an app to bulk edit style proto notes.`
     ],
     skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ]
   },
   {
     name: 'House BOM',
     descriptions: [
-      `Migrated House BOM functionality from legacy ASP.NET web page to consolidate with the new BOM application.`
+      `Migrated House BOM functionality from the legacy code base to consolidate with the other BOM features.`
     ],
     skills: [ 9, 13, 14, 21, 22, 29, 40 ]
   },
   {
-    name: 'Thullo',
+    name: '[Demo] Thullo',
     descriptions: [
-      `A base implementation Trello clone based on linked challenge from devchallenges.io.`
+      `Implemented minimal Trello clone based on challenge @ devchallenges.io.`
     ],
     skills: [ 14, 23, 35, 36, 37, 38, 39 ]
   },
   {
     name: 'Bulk Size Assignment',
     descriptions: [
-      `Implemented an app to add sizes to styles, in bulk.`
+      `Implemented an app to bulk add sizes to styles.`
     ],
     skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ]
   },
   {
     name: 'LBI to SSRS',
     descriptions: [
-      `Converted a variety of legacy reports to SSRS in csv, xlsx, and pdf formats. Set up email subscriptions.`
+      `Converted dozens of legacy reports from Crystal to SSRS in formats: csv, xlsx, pdf. Set up email subscriptions.`
     ],
     skills: [ 13, 31, 33 ]
   },
   {
     name: 'Bulk Color Assignment',
     descriptions: [
-      `Designed and implemented an app to add colors to styles, in bulk.`
+      `Implemented an app to bulk add colors to styles.`
     ],
     skills: [ 1, 6, 7, 13, 14, 21, 22, 29, 31, 32 ]
   },
   {
-    name: 'Questionnaire Generator',
+    name: '[Demo] Questionnaire Generator',
     descriptions: [
-      `Created an application with login authentication (.NET CORE Web API / Identity) and Angular reactive forms to build out 
-      custom questionnaire forms.`
+      `Implemented an app with authentication (.NET Core Identity), and Angular reactive forms - to create dynamic questionnaire forms.`
     ],
     skills: [ 1, 7, 8, 28, 34 ]
   },
   {
     name: 'Legal Matter Point',
     descriptions: [
-      `Designed and implemented a law firm matter management system. Some key features: suite of reports, 
-      merge docs, fully customizable questionnaire forms, export/import capabilities, client credit card payments, 
-      mail merge (via the Outlook Add-In), and role based/2-factor authentication and authorization system.`,
-      `The app is hosted on Microsoft Azure, I configured Azure resources: App Service': { storage Account': { sendGrid, 
-      and MySQL Database.`
+      `Implemented a matter management system. Some key features: suite of reports, merge docs, fully customizable questionnaire forms, 
+      export/import, credit card payment integration, mail merge, 2-factor authentication.`,
+      `Set up Azure hosting with: App Service, storage Account, sendGrid, MySQL Database.`
     ],
     skills: [ 1, 6, 7, 9, 11, 12, 13, 14, 15, 18, 20, 21, 22, 23, 24, 28 ]
   },
   {
     name: 'Tax Accrual System',
     descriptions: [
-      `Designed and implemented a system to manage real estate taxes. It includes a user interface and a 
-      console app to process user-entered data, generate and email reports, and create journal entries.`
+      `Implemented an app to manage real estate taxes. It includes a UI and console app to process batch data, 
+      generate and email reports, and create journal entries.`
     ],
     skills: [ 1, 10, 25, 26, 27, 28, 30 ]
   },
   {
     name: 'Intercompany Journal Entries',
     descriptions: [
-      `Designed and implemented a system to create source/destination company journal entries. These entries can be
-      grouped into buckets. User-level security is tied to each bucket. Supports export/import functionality for
-      batches of entries. In addition': { supporting documents (pdf, docx, txt, xlsx) can be attached to entries.`
+      `Implemented an app to create intercompany journal entries. Key features: group entries into buckets, User-level security, 
+      export/import functionality for batches of entries, attach supporting docs to entries.`
     ],
     skills: [ 1, 2, 10, 25, 26, 28, 30 ]
   },
   {
     name: 'Non-Domicile Fuel Reclass',
     descriptions: [
-      `Designed and implemented a system to automate a manual monthly process involving updating tax rates and 
-      performing calculations to create journal entries. The old process was being managed in a series of 
-      Excel spreadsheets.`
+      `Implemented a system to automate a monthly process to update tax rates, and create journal entries. This replaced a manual 
+      process using Excel spreadsheets.`
     ],
     skills: [ 2, 10, 25, 26, 28, 30 ]
   },
   {
     name: 'Shared Services System',
     descriptions: [
-      `Wrote several console apps that run on a scheduled (monthly) basis, and an associated WCF service to manage  
-      database updates for the core system data. Each of the console apps processes a specific 'measure type', and 
-      loads the data set by calling the WCF service.`
+      `Implemented console apps that run on a schedule. Each one app processes a specific 'measure type', and 
+      updates the database by calling a WCF service endpoint.`
     ],
     skills: [ 1, 10, 26, 27, 28 ]
   },
   {
     name: 'Full Time Equivalent (FTE)',
     descriptions: [
-      `Wrote an app to aggregate and manage employee headcount information based on business rules. The UI for 
-      this app resembles a spreadsheet, and supports export/import functionality for batches of data.`
+      `Implemeneted an app to aggregate and manage employee headcount information. Includes batch export/import functionality.`
     ],
     skills: [ 1, 2, 10, 25, 26, 28, 30 ]
   },
   {
     name: 'GlsLookup',
     descriptions: [ 
-      `Created a Microsoft Excel Add-In (xll) with custom User Defined Functions (UDF's) that accept arguments, and
-      returns summarized data based on those arguments. This Add-In calls off to a WCF service, 
-      executes SQL to retrieve data, and returns the results.`, 
-      `I implemented several performance enhancing techniques to support spreadsheets with 1000's of instances 
-      of these formulas in use without grinding to a halt. These techniques include: async execution of long 
-      running tasks, batch requests (So the WCF backend does not get hit 1000's of times every 
-      time the spreadsheet recalculates), DB2 temp tables to JOIN on (to execute the SQL once for all parameter 
-      combinations), and .NET Dictionary's to efficiently process the returned results.`
+      `Created a Microsoft Excel Add-In (xll) with User Defined Functions that return summarized accounting data via calls to a WCF service.`, 
+      `Used performance enhancing techniques: async execution, batch requests together, DB2 temp tables, .NET in-memory Dictionary data structure.`
     ],
     skills: [ 10, 16, 26 ]
   },
   {
     name: 'Healthcare Summary',
     descriptions: [ 
-      `Wrote an app to manage healthcare data and generate journal entries. Requirements included supporting a 
-      variety of business rules and automating dynamic calculations. The old process was being managed in a 
-      series of Excel spreadsheets.`
+      `Implemented an app to manage healthcare data and create journal entries. Replaced a manual process using Excel spreadsheets.`
     ],
     skills: [ 1, 2, 10, 25, 26, 28, 30 ]
   },
