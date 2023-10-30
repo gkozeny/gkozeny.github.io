@@ -69,14 +69,6 @@
           </div>
           <div class="my-1">&nbsp;</div>
       </div>
-      <button 
-        id="btnReturnToTop" 
-        class="btn btn-primary d-block mx-auto" 
-        :class="{ invisible: !showReturnToTop }"
-        onclick="window.scrollTo(0, 0)" 
-        style="display: none">
-        Scroll to Top
-      </button>
     </div> 
   </div>
 
@@ -87,8 +79,6 @@
       el: '#app', 
       data: { skills, projects, trainingCourses, showReturnToTop: false } 
     });
-
-    window.onscroll = () => vm.$data.showReturnToTop = window.scrollY > 50;
   </script>
 </body>
 </html>
