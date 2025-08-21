@@ -49,7 +49,7 @@ var skills = {
 var projects = [
   {
     name: 'Prototype Deep (Web) Research',
-    descriptions: [`Designed and implemented a deep (web) research app to provide highly relevant and personalized information based on the users specified interest.`],
+    descriptions: [`Designed and implemented a deep (web) research app that surfaces highly relevant and personalized information based on the users specified interest.`],
     skills: [ 46, 47 ]
   },
   {
