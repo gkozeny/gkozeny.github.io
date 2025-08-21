@@ -41,10 +41,27 @@ var skills = {
 	'42': 'Next.js',
 	'43': 'Bootstrap',
 	'44': 'GraphQL',
-	'45': 'Unity 2D'
+	'45': 'Unity 2D',
+  '46': 'AI Agents',
+  '47': 'MCP'
 };
 
 var projects = [
+  {
+    name: 'Prototype Deep (Web) Research',
+    descriptions: [`Designed and implemented a deep (web) research app to provide highly relevant and personalized information based on the users specified interest.`],
+    skills: [ 46, 47 ]
+  },
+  {
+    name: 'Prototype Product Recommender',
+    descriptions: [`Designed and implemented a chat app to make product recommendations.`],
+    skills: [ 46 ]
+  },
+  {
+    name: 'Structured Data Comparison Tool',
+    descriptions: [`Implemented an app that compares unordered, structured data files for differences: JSON, XML.`],
+    skills: [ 21, 22, 23 ]
+  },
   {
     name: 'AR Applied Credit Batches',
     descriptions: [`Implemented a batch automation for applied credits.`],
@@ -223,6 +240,10 @@ var projects = [
 ];
 
 var trainingCourses = [
+  {
+    url: 'https://www.udemy.com/share/10dbXB3@esaXrtcqsIRta9_zdcG0qMeYuJl9SR0Yx-BZyGWfXsBIi5wVTcJH9up-hmn8a4fM/',
+    description: 'Master AI Agents in 30 days: build 8 real-world projects with OpenAI Agents SDK, CrewAI, LangGraph, AutoGen and MCP'
+  },
   {
 		url: 'https://www.youtube.com/watch?v=jD7FnbI76Hg', 
     description: 'Realtime Chat With Users & Rooms - Socket.io, Node & Express'
