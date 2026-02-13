@@ -2,7 +2,7 @@ const projects = [
   {
     name: 'B2C eCommerce Storefront Feature Enhancements: Checkout & Payments',
     descriptions: ['Delivered feature enhancements to the global B2C eCommerce storefront, including checkout and payment flows, order confirmation, fraud detection, localization, and on-site messaging using Salesforce SFRA.'],
-    skills: ['Salesforce SFRA']
+    skills: ['Salesforce SFRA', 'JavaScript (ES6+)', 'Splunk']
   },
   {
     name: 'Retail Product Finder App Enhancements: Checkout & Payments',
@@ -12,7 +12,7 @@ const projects = [
   {
     name: 'Order Query',
     descriptions: ['Developed an AI-powered order query tool that accelerates data discovery through natural‑language search, featuring saved query configurations, a context‑aware order schema, custom views, intuitive keyboard navigation, and an extensible action bar for streamlined workflows.'],
-    skills: ['Salesforce SFRA', 'Azure AI', 'JavaScript (ES6)', 'jQuery', 'HTML', 'CSS']
+    skills: ['Salesforce SFRA', 'Azure AI', 'JavaScript (ES6+)', 'jQuery', 'HTML5', 'CSS3']
   },
   {
     name: 'InternalCommsTranslatorAPI',
@@ -22,7 +22,7 @@ const projects = [
   {
     name: 'Structured Data Comparison Tool',
     descriptions: ['Built an internal file comparison tool to reduce manual validation effort during website releases, using Vue.js, TypeScript, and structured data formats (JSON, XML).'],
-    skills: ['HTML', 'CSS', 'Vue.js', 'TypeScript']
+    skills: ['HTML5', 'CSS3', 'Vue.js', 'TypeScript']
   },
   {
     name: 'AR Applied Credit Batches',
@@ -32,12 +32,12 @@ const projects = [
   {
     name: 'Internal Return Authorizations',
     descriptions: ['Implemented a new page for customer return authorizations.'],
-    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', '.NET LINQ', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
+    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', '.NET LINQ', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
   },
   {
     name: 'eCommerce: Online Invoices',
     descriptions: ['Implemented a page for customers to view printer-friendly invoices.'],
-    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
+    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
   },
   {
     name: 'Customization: Handle When ERP Down',
@@ -47,52 +47,52 @@ const projects = [
   {
     name: 'Customize: Product Detail Page',
     descriptions: ['Implemented a 3D customization tool on the web. Connected to internal systems for order fulfillment.'],
-    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
+    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
   },
   {
     name: 'Customize: 3D Preview App',
     descriptions: ['Implemented a page to preview 3D files before uploading them to the web.'],
-    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
+    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
   },
   {
     name: 'Customize: Artwork Management',
     descriptions: ['implemented an app to process and fulfill customize orders.'],
-    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', '.NET LINQ', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
+    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', '.NET LINQ', 'JIRA', 'SQL Server', 'D3.js', 'Bootstrap']
   },
   {
     name: 'Raw Material Bulk Editor',
     descriptions: ['implemented an app to bulk edit raw material attributes.'],
-    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'D3.js']
+    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'D3.js']
   },
   {
     name: 'Style Attributes',
     descriptions: ['Implemented additional attributes to support quickly creating and managing new styles.'],
-    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'GraphQL']
+    skills: ['C#', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'GraphQL']
   },
   {
     name: '[Demo] Coffee Shop',
     descriptions: ['Browse coffee products, pick quantity, add to cart, checkout.'],
-    skills: ['JavaScript (ES6)', 'React', 'Next.js', 'Bootstrap']
+    skills: ['JavaScript (ES6+)', 'React', 'Next.js', 'Bootstrap']
   },
   {
     name: 'Bulk Proto Notes',
     descriptions: ['Implemented an app to bulk edit style proto notes.'],
-    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'D3.js']
+    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'D3.js']
   },
   {
     name: 'House BOM',
     descriptions: ['Migrated House BOM functionality from the legacy code base to consolidate with the other BOM features.'],
-    skills: ['jQuery', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'Handlebars.js']
+    skills: ['jQuery', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'Handlebars.js']
   },
   {
     name: '[Demo] Thullo',
     descriptions: ['Implemented minimal Trello clone based on challenge @ devchallenges.io.'],
-    skills: ['JavaScript (ES6)', 'Vue.js', 'Nuxt.js', 'Firebase - Firestore', 'Firebase - Storage', 'Firebase - Auth', 'Bulma.css']
+    skills: ['JavaScript (ES6+)', 'Vue.js', 'Nuxt.js', 'Firebase - Firestore', 'Firebase - Storage', 'Firebase - Auth', 'Bulma.css']
   },
   {
     name: 'Bulk Size Assignment',
     descriptions: ['Implemented an app to bulk add sizes to styles.'],
-    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'D3.js']
+    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'D3.js']
   },
   {
     name: 'LBI to SSRS',
@@ -102,7 +102,7 @@ const projects = [
   {
     name: 'Bulk Color Assignment',
     descriptions: ['Implemented an app to bulk add colors to styles.'],
-    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6)', 'HTML', 'CSS', 'JIRA', 'SQL Server', 'D3.js']
+    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'Visual Studio', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JIRA', 'SQL Server', 'D3.js']
   },
   {
     name: '[Demo] Questionnaire Generator',
@@ -112,7 +112,7 @@ const projects = [
   {
     name: 'Legal Matter Point',
     descriptions: ['Implemented a matter management system. Some key features: suite of reports, merge docs, fully customizable questionnaire forms, export/import, credit card payment integration, mail merge, 2-factor authentication.', 'Set up Azure hosting with: App Service, storage Account, sendGrid, MySQL Database.'],
-    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'jQuery', 'MySQL', 'MS Azure', 'Visual Studio', 'JavaScript (ES6)', 'MS Excel', 'Git SCM', 'EF Core', 'HTML', 'CSS', 'Vue.js', 'VSTO Outlook Add-In', '.NET LINQ']
+    skills: ['C#', 'ASP.NET Core', '.NET Core WebAPI', 'jQuery', 'MySQL', 'MS Azure', 'Visual Studio', 'JavaScript (ES6+)', 'MS Excel', 'Git SCM', 'EF Core', 'HTML5', 'CSS3', 'Vue.js', 'VSTO Outlook Add-In', '.NET LINQ']
   },
   {
     name: 'Tax Accrual System',
