@@ -1,17 +1,17 @@
 const projects = [
   {
     name: 'B2C eCommerce Storefront Feature Enhancements: Checkout & Payments',
-    descriptions: ['Delivered feature enhancements to the global B2C eCommerce storefront, including checkout and payment flows, order confirmation, fraud detection, localization, and on-site messaging using Salesforce SFRA.'],
+    descriptions: ['Scaled global B2C eCommerce storefronts by implementing localization, multi-currency payment flows, and on-site messaging via Salesforce SFRA to drive international expansion.'],
     skills: ['Salesforce SFRA', 'JavaScript (ES6+)', 'Splunk']
   },
   {
     name: 'Retail Product Finder App Enhancements: Checkout & Payments',
-    descriptions: ['Enhanced the retail product finder application by building frontend features at checkout and the submit order pipeline with React, TypeScript, Chakra UI, and Salesforce SFRA, allowing in-store order placement.'],
+    descriptions: ['Scaled omni-channel order capabilities by developing checkout and payment features using React, TypeScript, and Salesforce SFRA.'],
     skills: ['React', 'Salesforce SFRA', 'TypeScript', 'Chakra UI']
   },
   {
     name: 'Order Query',
-    descriptions: ['Developed an AI-powered order query tool that accelerates data discovery through natural‑language search, featuring saved query configurations, a context‑aware order schema, custom views, intuitive keyboard navigation, and an extensible action bar for streamlined workflows.'],
+    descriptions: ['Architected an AI-powered order query tool using natural-language search, reducing data discovery time for support teams.'],
     skills: ['Salesforce SFRA', 'Azure AI', 'JavaScript (ES6+)', 'jQuery', 'HTML5', 'CSS3']
   },
   {
