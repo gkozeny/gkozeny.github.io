@@ -21,16 +21,17 @@
 
       <div class="tabs">
         <button class="tab-button active" onclick="switchTab('projects')">Projects</button>
-        <button class="tab-button" onclick="switchTab('skills')">Skills & Tools</button>
         <button class="tab-button" onclick="switchTab('courses')">Completed Training Courses</button>
       </div>
 
       <section id="projects" class="section-content active">
+        <div class="filter-container">
+          <button id="filter-button" class="filter-button">Filter by Skills & Tools ▼</button>
+          <div id="filter-menu" class="filter-menu hidden">
+            <div id="skills-filter-list"></div>
+          </div>
+        </div>
         <div class="projects-list" id="projects-list"></div>
-      </section>
-
-      <section id="skills" class="section-content">
-        <div class="skills-container" id="skills-list"></div>
       </section>
 
       <section id="courses" class="section-content">

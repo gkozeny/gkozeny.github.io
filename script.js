@@ -343,10 +343,35 @@ function switchTab(tabName) {
   event.target.classList.add('active');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Render Projects
-  const projectsList = document.getElementById('projects-list');
+// Store unique skills and selected filters
+let allSkills = [];
+let selectedSkills = new Set();
+
+function getUniqueSkills() {
+  const uniqueSkills = new Set();
   projects.forEach(project => {
+    project.skills.forEach(skill => uniqueSkills.add(skill));
+  });
+  return Array.from(uniqueSkills).sort((a, b) => {
+    const aClean = a.replace(/^\.+/, '');
+    const bClean = b.replace(/^\.+/, '');
+    return aClean.localeCompare(bClean);
+  });
+}
+
+function renderProjectsFiltered() {
+  const projectsList = document.getElementById('projects-list');
+  projectsList.innerHTML = '';
+
+  // Filter projects based on selected skills
+  let filteredProjects = projects;
+  if (selectedSkills.size > 0) {
+    filteredProjects = projects.filter(project => {
+      return Array.from(selectedSkills).some(skill => project.skills.includes(skill));
+    });
+  }
+
+  filteredProjects.forEach(project => {
     const projectEl = document.createElement('div');
     projectEl.className = 'project';
 
@@ -376,24 +401,63 @@ document.addEventListener('DOMContentLoaded', function() {
     projectEl.appendChild(skillsEl);
     projectsList.appendChild(projectEl);
   });
+}
 
-  // Render Skills
-  const skillsList = document.getElementById('skills-list');
-  const uniqueSkills = new Set();
-  projects.forEach(project => {
-    project.skills.forEach(skill => uniqueSkills.add(skill));
+function renderSkillsFilter() {
+  const filterList = document.getElementById('skills-filter-list');
+  filterList.innerHTML = '';
+
+  allSkills.forEach(skill => {
+    const checkboxContainer = document.createElement('label');
+    checkboxContainer.className = 'filter-option';
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.value = skill;
+    checkbox.checked = selectedSkills.has(skill);
+    checkbox.addEventListener('change', function() {
+      if (this.checked) {
+        selectedSkills.add(skill);
+      } else {
+        selectedSkills.delete(skill);
+      }
+      renderProjectsFiltered();
+    });
+
+    const label = document.createElement('span');
+    label.className = 'filter-label';
+    label.textContent = skill;
+
+    checkboxContainer.appendChild(checkbox);
+    checkboxContainer.appendChild(label);
+    filterList.appendChild(checkboxContainer);
   });
-  Array.from(uniqueSkills).sort((a, b) => {
-    // Remove leading dots for comparison
-    const aClean = a.replace(/^\.+/, '');
-    const bClean = b.replace(/^\.+/, '');
-    return aClean.localeCompare(bClean);
-  }).forEach(skill => {
-    const skillEl = document.createElement('span');
-    skillEl.className = 'skill-item';
-    skillEl.textContent = skill;
-    skillsList.appendChild(skillEl);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get unique skills
+  allSkills = getUniqueSkills();
+
+  // Setup filter menu toggle
+  const filterButton = document.getElementById('filter-button');
+  const filterMenu = document.getElementById('filter-menu');
+
+  filterButton.addEventListener('click', function() {
+    filterMenu.classList.toggle('hidden');
   });
+
+  // Close filter menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.filter-container')) {
+      filterMenu.classList.add('hidden');
+    }
+  });
+
+  // Render Skills Filter
+  renderSkillsFilter();
+
+  // Render Projects
+  renderProjectsFiltered();
 
   // Render Training Courses
   const coursesList = document.getElementById('courses-list');
